@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <p id="myPara" data-name="abhisneha" style="color: red;">Here is a paragraph.</p>
+        <button onclick="myFunc()">Click</button>
+        <script>
+            let p = document.getElementById("myPara")
+
+            function myFunc() {
+                p.innerHTML = "Paragraph changed."
+                p.setAttribute("data-name", "ashish");
+                p.setAttribute("style", "color: blue;")
+            }
+        </script>        
+    </body>
+</html>

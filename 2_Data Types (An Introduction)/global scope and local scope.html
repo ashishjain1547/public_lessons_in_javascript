@@ -1,0 +1,14 @@
+<script>
+    var a = 5;
+    
+    function print(){
+        var b = 6; /* b is not available to code outside the body of this function */
+        console.log(a)
+        console.log(b)
+    }
+
+    print()
+
+    console.log(b); /* throws an error */
+
+</script>

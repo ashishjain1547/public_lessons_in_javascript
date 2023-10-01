@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <p id="myPara" data-name="abhisneha" style="color: red;">Here is a paragraph.</p>
+        <button onclick="hide()">Hide</button> &nbsp;
+        <button onclick="show()">show
+
+        </button>
+        <script>
+            let p = document.getElementById("myPara")
+
+            function hide() {
+                p.style.display = "none";
+                console.log("Element hidden")
+            }
+            function show() {
+                p.style.display ="block";
+                console.log("Element displayed")
+            }
+
+        </script>        
+    </body>
+</html>
