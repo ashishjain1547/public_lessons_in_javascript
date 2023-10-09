@@ -63,294 +63,141 @@
     let questions = [
         {
             "sno": "1",
-            "ques": "Which of these is not a data type in JavaScript?",
-            "section": ["Data Types"],
-            "options": ['String', 'Floating Point Number', 'Array', 'Boolean'],
-            "ans": "Floating Point Number",
-            "qtype": "scq"
+            "ques": `For the pattern /truman/gm : which records from the above data will be referenced?`,
+            "section": ["Regex"],
+            "options": ['2233', '9876', '5678', '2365', '5423', '1006', '6213', '1265', '4290', '2476', '6521', '3212', '3564', '2345', '0110'],
+            "ans": ["0110"],
+            "qtype": "mcq"
         },
         {
             "sno": "2",
-            "ques": `What will be the output of the following code?
-    let x = 5
-    let y = 10
-    console.log(x++)
-    console.log(x + y)`,
-            "section": ["Operators", "Code Evaluation"],
-            "options": ['5 and 15', '6 and 15', '5 and 16', '6 and 16'],
-            "ans": "5 and 16",
-            "qtype": "scq"
+            "ques": `For the pattern /wo[od][de]house/gm : which records from the above data will be referenced?`,
+            "section": ["Regex"],
+            "options": ['2233', '9876', '5678', '2365', '5423', '1006', '6213', '1265', '4290', '2476', '6521', '3212', '3564', '2345', '0110'],
+            "ans": ["1265", "2476"],
+            "qtype": "mcq"
         },
         {
             "sno": "3",
-            "ques": "Which of these expressions return true?",
-            "section": ["Data Types"],
-            "options": ['5 == 5.0',
-                'new String("John") == "John"',
-                'new String("John") == new String("John")',
-                'parseInt("5") === parseFloat("5.0")'
-            ],
-            "ans": [
-                '5 == 5.0',
-                'new String("John") == "John"',
-                'parseInt("5") === parseFloat("5.0")'
-            ],
+
+            "ques": `For the pattern /true*man/gm : which records from the above data will be referenced?`,
+            "section": ["Regex"],
+            "options": ['2233', '9876', '5678', '2365', '5423', '1006', '6213', '1265', '4290', '2476', '6521', '3212', '3564', '2345', '0110'],
+
+            "ans": ['3564', '0110'],
             "qtype": "mcq"
         },
 
         {
             "sno": "4",
-            'ques': `Select the data types that are used in the following code:
-    let length = 16;          
-    let lastName = "Johnson";  
-    const x = {
-      firstName: "John",
-      lastName: "Doe"
-    };`,
-            'section': ['Data Types', 'Code Evaluation'],
-            'options': ['Boolean', 'Array', 'String', 'Number', 'Object'],
-            'ans': ['String', 'Number', 'Object'],
-            'qtype': "mcq"
-        },
+            "ques": `For the pattern /wilco[cx]k*s*/gm : which records from the above data will be referenced?`,
+            "section": ["Regex"],
+            "options": ['2233', '9876', '5678', '2365', '5423', '1006', '6213', '1265', '4290', '2476', '6521', '3212', '3564', '2345', '0110'],
 
-        {
-            "sno": "5",
-            "ques": "Which of these is not a direct use case of length property of an array?",
-            "section": ["Array"],
-            'options': [
-                'To get the number of elements in the array.',
-                'To get the last element of the array.',
-                'To execute a function for each element of an array.'
-            ],
-            'ans': 'To execute a function for each element of an array.',
-            'qtype': 'scq'
-        },
-
-        {
-            "sno": "6",
-            "ques": "Select the intents that we can achieve using a string method in JavaScript",
-            "section": ['String'],
-            "options": [
-                'Hello + World -> HelloWorld',
-                "'12345' -> '0000012345'",
-                "HelloWorld -> HELLOWORLD",
-                "HelloWorld -> [Hell, W, rld]",
-                "Hello -> HelloHelloHello",
-                'HelloWorld -> dlroWolleH'
-            ],
-            'ans': [
-                'Hello + World -> HelloWorld',
-                "'12345' -> '0000012345'",
-                "HelloWorld -> HELLOWORLD",
-                "HelloWorld -> [Hell, W, rld]",
-                "Hello -> HelloHelloHello"
-            ],
-            "qtype": 'mcq'
-        },
-
-        {
-            "sno": "7",
-            "ques": `What is the correct JavaScript syntax to change the content of the HTML element below?
-    &lt;p id="demo">This is a demonstration.&lt;/p>`,
-            "section": ["DOM Manipulation"],
-            "options": [
-                '#demo.innerHTML = "Hello World!";',
-                'document.getElementByName("p").innerHTML = "Hello World!";',
-                'document.getElementById("demo").innerHTML = "Hello World!";',
-                'document.getElement("p").innerHTML = "Hello World!";'
-            ],
-            'ans': 'document.getElementById("demo").innerHTML = "Hello World!";',
-            'qtype': 'scq'
-        },
-
-        {
-            'sno': "8",
-            "ques": 'Where is the correct place to insert a JavaScript?',
-            'section': ["DOM Manipulation"],
-            "options": [
-                'The &lt;head> section',
-                'Both the &lt;head> section and the &lt;body> section are correct',
-                'The &lt;body> section'
-            ],
-            'ans': 'Both the &lt;head> section and the &lt;body> section are correct',
-            'qtype': 'scq'
-        },
-
-        {
-            'sno': "9",
-            "ques": "What is the correct syntax for referring to an external script called 'xxx.js'?",
-            'section': ['DOM Manipulation'],
-            'options': [
-                '&lt;script src="xxx.js">',
-                '&lt;script href="xxx.js">',
-                '&lt;script name="xxx.js">'
-            ],
-            'ans': '&lt;script src="xxx.js">',
-            'qtype': 'scq'
-        },
-
-        {
-            'sno': "10",
-            "ques": "The external JavaScript file must contain the &lt;script> tag.",
-            "section": ['DOM Manipulation'],
-            "options": [
-                "True",
-                "False"
-            ],
-            'ans': "False",
-            "qtype": "scq"
-        },
-
-        {
-            'sno': "11",
-            "ques": "How to write an IF statement for executing some code if 'i' is NOT equal to 5?",
-            "section": ["Conditional Expression"],
-            "options": [
-                'if i =! 5 then',
-                'if (i != 5)',
-                'if (i &lt;> 5)',
-                'if i &lt;> 5'
-            ],
-            "ans": "if (i != 5)",
-            "qtype": "scq"
-        },
-
-        {
-            "sno": "12",
-            "ques": "How does a WHILE loop start?",
-            "section": ["Loops"],
-            "options": [
-                "while (i &lt;= 10)",
-                "while i = 1 to 10",
-                "while (i &lt;= 10; i++)"
-            ],
-            "ans": "while (i &lt;= 10)",
-            "qtype": "scq"
-        },
-
-        {
-            "sno": "13",
-            "ques": "How does a FOR loop start?",
-            "section": ["Loops"],
-            "options": [
-                'for i = 1 to 5',
-                'for (i = 0; i &lt;= 5)',
-                'for (i = 0; i &lt;= 5; i++)',
-                'for (i &lt;= 5; i++)'
-            ],
-            "ans": 'for (i = 0; i &lt;= 5; i++)',
-            "qtype": "scq"
-        },
-
-        {
-            "sno": "14",
-            "ques": "How can you add a comment in a JavaScript?",
-            "section": ["Syntax"],
-            "options": [
-                "//This is a comment",
-                "&lt;!--This is a comment-->",
-                "'This is a comment"
-            ],
-            "ans": "//This is a comment",
-            "qtype": "scq"
-        },
-
-        {
-            "sno": "15",
-            "ques": "How to insert a comment that has more than one line?",
-            "section": ["Syntax"],
-            "options": [
-                `//This comment has more than one line//`,
-                `&lt;!--This comment has more than one line-->`,
-                `/*This comment has more than one line*/`,
-            ],
-            "ans": "/*This comment has more than one line*/",
-            "qtype": "scq"
-        },
-
-        {
-            "sno": "16",
-            "ques": "How do you round the number 7.25, to the nearest integer?",
-            "section": ["Math"],
-            "options": [
-                `Math.round(7.25)`,
-                `round(7.25)`,
-                'rnd(7.25)',
-                'Math.rnd(7.25)'
-            ],
-            "ans": `Math.round(7.25)`,
-            "qtype": "scq"
-
-        },
-
-        {
-            "sno": "17",
-            "ques": "Which all of these you can achieve using the Math module?",
-            "section": ["Math"],
-            "options": [
-                "Absolute value",
-                "Trigonometric functions",
-                "Exponentiation",
-                "Logarithms",
-                "Min, max value",
-                "Cube root",
-                "Factorial"
-            ],
-            "ans": [
-                "Absolute value",
-                "Trigonometric functions",
-                "Exponentiation",
-                "Logarithms",
-                "Min, max value",
-                "Cube root"
-            ],
+            "ans": ['3212', '2345'],
             "qtype": "mcq"
         },
 
         {
-            "sno": "18",
-            "ques": "How can you detect the client's browser name?",
-            "section": ["Browser Detection"],
-            "options": [
-                "client.navName",
-                "browser.name",
-                "navigator.appName"
-            ],
-            "ans": "navigator.appName",
-            "qtype": "scq"
-        },
-        {
-            "sno": "19",
-            "ques": "Which event occurs when the user clicks on an HTML element?",
-            "section": ["Event Handling"],
-            "options": [
-                "onmouseover",
-                "onclick",
-                "onmouseclick",
-                "onchange"
-            ],
-            "ans": "onclick",
-            "qtype": "scq"
+            "sno": "5",
+            "ques": `For the pattern /p.*woodhouse/gm : which records from the above data will be referenced?`,
+            "section": ["Regex"],
+            "options": ['2233', '9876', '5678', '2365', '5423', '1006', '6213', '1265', '4290', '2476', '6521', '3212', '3564', '2345', '0110'],
+
+            "ans": ['1265'],
+            "qtype": "mcq"
         },
 
         {
-            "sno": "20",
-            "ques": "Which of these is not a way to declare a JavaScript variable?",
-            "section": ["Syntax"],
-            "options": [
-                "let carName = 'Volvo'",
-                "var carName = 'Volvo'",
-                "const carName = 'Volvo'",
-                "def carName = 'Volvo'"
-            ],
-            "ans": "def carName = 'Volvo'",
-            "qtype": "scq"
-        }
+            "sno": "6",
+            "ques": `For the pattern /^2/gm : which records from the above data will be referenced?`,
+            "section": ["Regex"],
+            "options": ['2233', '9876', '5678', '2365', '5423', '1006', '6213', '1265', '4290', '2476', '6521', '3212', '3564', '2345', '0110'],
+
+            "ans": ['2233', '2365', '2476', '2345'],
+            "qtype": "mcq"
+        },
+
+        {
+            "sno": "7",
+            "ques": `For the pattern /[78]....$/gm : which records from the above data will be referenced?`,
+            "section": ["Regex"],
+            "options": ['2233', '9876', '5678', '2365', '5423', '1006', '6213', '1265', '4290', '2476', '6521', '3212', '3564', '2345', '0110'],
+
+            "ans": ['5678', '3212', '3564'],
+            "qtype": "mcq"
+        },
+
+        {
+            "sno": "8",
+            "ques": `For the pattern /^[^2]/gm : which records from the above data will be referenced?`,
+            "section": ["Regex"],
+            "options": ['2233', '9876', '5678', '2365', '5423', '1006', '6213', '1265', '4290', '2476', '6521', '3212', '3564', '2345', '0110'],
+
+            "ans": ['9876', '5678', '5423', '1006', '6213', '1265', '4290', '6521', '3212', '3564', '0110'],
+            "qtype": "mcq"
+        },
+
+        {
+            "sno": "9",
+            "ques": `For the pattern /true?man/gm : which records from the above data will be referenced?`,
+            "section": ["Regex"],
+            "options": ['2233', '9876', '5678', '2365', '5423', '1006', '6213', '1265', '4290', '2476', '6521', '3212', '3564', '2345', '0110'],
+
+            "ans": ['3564', '0110'],
+            "qtype": "mcq"
+        },
+
+        {
+            "sno": "10",
+            "ques": `For the pattern /woodhouse|woodcock/gm : which records from the above data will be referenced?`,
+            "section": ["Regex"],
+            "options": ['2233', '9876', '5678', '2365', '5423', '1006', '6213', '1265', '4290', '2476', '6521', '3212', '3564', '2345', '0110'],
+
+            "ans": ['2365', '1265'],
+            "qtype": "mcq"
+        },
+
+        {
+            "sno": "11",
+            "ques": `For the pattern /wood(house|cock)/gm : which records from the above data will be referenced?`,
+            "section": ["Regex"],
+            "options": ['2233', '9876', '5678', '2365', '5423', '1006', '6213', '1265', '4290', '2476', '6521', '3212', '3564', '2345', '0110'],
+
+            "ans": ['2365', '1265'],
+            "qtype": "mcq"
+        },
+
+        {
+            "sno": "12",
+            "ques": `For the pattern /wilco[cx]k*s*|wood(house|cock)/gm : which records from the above data will be referenced?`,
+            "section": ["Regex"],
+            "options": ['2233', '9876', '5678', '2365', '5423', '1006', '6213', '1265', '4290', '2476', '6521', '3212', '3564', '2345', '0110'],
+
+            "ans": ['2365', '1265', '3212', '2345'],
+            "qtype": "mcq"
+        },
     ];
 
-    let inRecords = ``
+    let inRecords = `2233:charles harris  :g.m.     :sales     :12/12/52: 90000
+9876:bill johnson    :director :production:03/12/50:130000
+5678:robert dylan    :d.g.m.   :marketing :04/19/43: 85000
+2365:john woodcock   :director :personnel :05/11/47:120000
+5423:barry wood      :chairman :admin     :08/30/56:160000
+1006:gordon lightfoot:director :sales     :09/03/38:140000
+6213:michael lennon  :g.m.     :accounts  :06/05/62:105000
+1265:p.j. woodhouse  :manager  :sales     :09/12/63: 90000
+4290:neil o'bryan    :executive:production:09/07/50: 65000
+2476:jackie wodehouse:manager  :sales     :05/01/59:110000
+6521:derryk o'brien  :director :marketing :09/26/45:125000
+3212:bill wilcocks   :d.g.m.   :accounts  :12/12/55: 85000
+3564:ronie trueman   :executive:personnel :07/06/47: 75000
+2345:james wilcox    :g.m.     :marketing :03/12/45:110000
+0110:julie truman    :g.m.     :marketing :12/31/40: 95000`
 
 </script>
+
+
 
 <body>
     <div class="customContextualData" data-bind="if: inRecordsFlag">
@@ -366,9 +213,9 @@
             <!-- ko foreach: answerOptions -->
 
             <pre><input type="radio" data-bind="attr: { 'id': 'label_' + $index(), 
-                'value': $data }, checked: $parent.scqAnswer()" 
-                name="scq_options"> <label data-bind="html: $data, 
-                attr: { 'for': 'label_' + $index() }"></label></pre>
+            'value': $data }, checked: $parent.scqAnswer()" 
+            name="scq_options"> <label data-bind="html: $data, 
+            attr: { 'for': 'label_' + $index() }"></label></pre>
 
             <!-- /ko -->
             <!-- /ko -->
@@ -377,8 +224,8 @@
             <!-- ko foreach: answerOptions -->
 
             <pre><input type="checkbox" data-bind="attr: { 'id': 'label_' + $index(), 'value': $data },
-                checked: $parent.mcqAnswers()" name="mcq_options"> <label data-bind="html: $data, 
-                attr: { 'for': 'label_' + $index() }"></label></pre>
+            checked: $parent.mcqAnswers()" name="mcq_options"> <label data-bind="html: $data, 
+            attr: { 'for': 'label_' + $index() }"></label></pre>
 
             <!-- /ko -->
             <!-- /ko -->
@@ -446,14 +293,14 @@
         return array;
     }
 
-    let shuffleQuestionsFlag = true;
-    let shuffleOptionsFlag = true;
+    let shuffleQuestionsFlag = false;
+    let shuffleOptionsFlag = false;
 
 
     var ViewModel = function () {
         var self = this;
 
-        self.inRecordsFlag = ko.observable(false);
+        self.inRecordsFlag = ko.observable(true);
         self.inRecords = ko.observable(inRecords);
 
         self.custom_qno = ko.observable(1);
@@ -701,8 +548,8 @@
             self.performanceReportFlag(true);
 
             let msg = `Correct answers: ${self.correctCount()} <br><br> 
-            Incorrect answers: ${self.incorrectCount()} <br><br>
-            Skipped questions: ${questions.length - self.correctCount() - self.incorrectCount()}`;
+        Incorrect answers: ${self.incorrectCount()} <br><br>
+        Skipped questions: ${questions.length - self.correctCount() - self.incorrectCount()}`;
             self.performanceReportMessage(msg);
 
             console.log("viewPerformanceReport self.savedAnswersReport():", self.savedAnswersReport());
